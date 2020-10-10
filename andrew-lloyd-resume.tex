@@ -1,22 +1,44 @@
-\documentclass[11pt,a4paper, sans]{moderncv}
-\usepackage{fontspec}
-\usepackage{fontawesome}
-\moderncvtheme[blue]{casual}
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.9]{geometry}                      
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[bottom=0.5in, top=0.5in, scale=0.8]{geometry}
 \usepackage{multicol}
-
-
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[utf8]{inputenc}
+\usepackage{ifsym} 
 
 % personal data
 \firstname{Andrew}
 \familyname{Lloyd}
-\title{Full Stack Web Developer}          % optional, remove / comment the line if not wanted
-\mobile{778 679 8485}                     % optional, remove / comment the line if not wanted
-\email{andrew.lloyd01@googlemail.com}  
-\homepage{www.arlmedia.ca}          % optional, 
-\address{}{}{Victoria, BC}          % optional, 
+\title{Full Stack Web Developer} % optional, remove / comment the line if not wanted
+\mobile{778 679 8485} % optional, remove / comment the line if not wanted
+\email{andrew.lloyd01@googlemail.com} 
+\homepage{www.arlmedia.ca} % optional, 
+\address{}{}{\textifsymbol{18} Victoria, BC} % optional, 
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
@@ -25,95 +47,81 @@
 \label{sec:summary}
 
 From an early age I was introduced to computers by my brother in law, and ever since I have always had a fascination with software development coupled with a curiosity about building things and problem solving. Working in the film industry and as a lecturer formerly, programming was a hobby that kept on drawing me back in. This year I was laid off from my role as an office administrator, which spurred me on to go back to school and pursue my dream of web development. Not only have do I find coding intellectually stimulating but I have quickly realised that I am now doing what I love. Since starting Lighthouse Labs' 12 week bootcamp I have read through more material than I thought humanly possible to, taken extra Udemy courses on parallel to my studies, and created a portfolio of applications. Working as a full stack developer has been a transformative, rewarding and fulfilling experience, that has helped me realise my life long dream.
-
+% section Summary (end)
 
 \section{Skills}
 \begin{itemize}
-  \begin{multicols}{3}
-  \item JavaScript
-  \item HTML5
-  \item CSS
-  \item Node/Express
-  \item C$\sharp$ 
-  \item React
-  \item Storybook
-  \item Cypress
-  \item Jest
-  \item Ruby
-  \item AJAX
-  \item NPM
-  \item SQL
-  \item Adobe Creative Suite
-  \item Avid Pro Tools
-  \item Unity3D
+\begin{multicols}{3}
+\item JavaScript
+\item HTML5
+\item CSS
+\item Node/Express
+\item C$\sharp$ 
+\item React
+\item Storybook
+\item Cypress
+\item Jest
+\item Ruby
+\item AJAX
+\item NPM
+\item Yarn
+\item SQL
+\item Adobe Creative Suite
+\item Avid Pro Tools
+\item Unity3D
 \end{multicols}
 \end{itemize}
-%Section Projects
+
+% section Skills (end)
 
 \section{Projects}
 
-\cventry{Sept. 26 - Oct. 7, 2020}{Interview Scheduler \emph{}}{Lighthouse Labs - Victoria, BC}{}{}{} % arguments 3 to 6 can be left empty
+\cventry{Sept. 26 - Oct. 7, 2020}{\href{https://github.com/AndrewRLloyd88/scheduler}{\textit{Interview Shceduler}}}{}{}{}{A Single Page React app that allows users to book and cancel interviews.
+\begin{itemize}
+\item \textbf{Front End:} React, Webpack, Babel, SASS
+\item \textbf{Back End:} Axios, PostgreSQL, Express, Webpack Dev Server
+\item \textbf{Test:} Jest, Cypress, Storybook
+\end{itemize}
+}
 
-\cventry{March-May 2015}{Visiting student -- Software Practices Lab}{University of British Columbia, Vancouver, Canada}{}{}{Developer activity and software quality in open-source\\
-Advisors: Dr. Marc Palyart and Pr. Gail C. Murphy}
+\cventry{Sept. 18 - 25, 2020}{\href{https://github.com/andreiskandar/quiz-app}{\textit{QuizAPP}}}{}{}{}{Quiz app is a single page app that you can use to create, take and share quizzes. Users can see recent attempts at a quiz after completing them.
+\begin{itemize}
+\item \textbf{Front End:} EJS, jQuery, SASS
+\item \textbf{Back End:} NodeJS, Express, jQuery, PostgreSQL, JavaScript
+\item \textbf{Test:} Mocha, Chai
+\end{itemize}
+}
+\cventry{Sept. 26 - Oct. 7, 2020}{\href{https://github.com/AndrewRLloyd88/tweeter}{\textit{Tweeter}}}{}{}{}{A a simple, single-page Twitter clone.
+\begin{itemize}
+\item \textbf{Front End:} HTML, CSS, JavaScript, jQuery, 
+\item \textbf{Back End:} NodeJS, Express, jQuery, MongoDB, AJAX, JavaScript
+\item \textbf{Test:} Mocha, Chai
+\end{itemize}
+}
 
-\cventry{2012}{M.Sc. in Computer Science}{University of Bordeaux, Bordeaux, France}{}{}{Software Engineering - Project Management}
 
 
-\section{Professional Experience}
-\cventry{April - September 2012}{CEA \emph{(French Atomic Energy and Alternative Energies
-Commission)}}{R\&D Engineer Intern}{}{}{Designed an approach to adapt an existing version control system (Git) to a domain-specific modelling language.}
-\cventry{April - July 2010}{Keyland IT, Burgos, Spain}{Intern Developer}{}{}{Developed a set of modules for a civil engineering project management system.}
+
+% section Projects (end)
 
 \section{Education}
 
-\cventry{2019}{Diploma \emph{}}{Lighthouse Labs - Victoria, BC}{}{}{} % arguments 3 to 6 can be left empty
+\cventry{Nov 2020}{{Diploma: Full Stack Web Development}}{Lighthouse Labs - Victoria, BC}{}{}{}
+\cventry{Jul 2020}{\href{https://www.udemy.com/course/the-complete-web-development-bootcamp/}{\textit{The Complete 2020 Web Development Bootcamp}}}{Udemy - Online course}{}{}{}
+\cventry{Nov 2014}{MA in Sound Design with Post Production}{University of York, York, UK}{}{}{}
+\cventry{Jun 2012}{BA (Hons) Game Design and Media}{Sheffield Hallam University, Sheffield, UK}{}{}{}
 
-\cventry{March-May 2015}{Visiting student -- Software Practices Lab}{University of British Columbia, Vancouver, Canada}{}{}{Developer activity and software quality in open-source\\
-Advisors: Dr. Marc Palyart and Pr. Gail C. Murphy}
-
-\cventry{2012}{M.Sc. in Computer Science}{University of Bordeaux, Bordeaux, France}{}{}{Software Engineering - Project Management}
-
-
-\section{Professional Experience}
-\cventry{April - September 2012}{CEA \emph{(French Atomic Energy and Alternative Energies
-Commission)}}{R\&D Engineer Intern}{}{}{Designed an approach to adapt an existing version control system (Git) to a domain-specific modelling language.}
-\cventry{April - July 2010}{Keyland IT, Burgos, Spain}{Intern Developer}{}{}{Developed a set of modules for a civil engineering project management system.}
-
-
-\section{Selected Publications}
-
-\cvitem{}{\textbf{Matthieu Foucault}, Marc Palyart, Xavier Blanc, Gail C. Murphy and Jean-Rémy Falleri.
-	\emph{Impact of developer turnover on quality in open-source software.}
-10th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE), 2015.}
-
-\cvitem{}{\textbf{Matthieu Foucault}, Cédric Teyton, David Lo, Xavier Blanc and Jean-Rémy Falleri.
-	\emph{On the usefulness of ownership metrics in open-source software projects.}
-	 Information \& Software Technology (IST), 2015.}
-
-\cvitem{}{\textbf{Matthieu Foucault}, Jean-Rémy Falleri and Xavier Blanc.
-\emph{Code ownership in open-source software.}
-18th International Conference on Evaluation and Assessment in Software Engineering (EASE), 2014.}
-
-\cvitem{}{\textbf{Matthieu Foucault}, Marc Palyart, Jean-Rémy Falleri, Xavier Blanc.
-\emph{Computing contextual metric thresholds.}
-29th Symposium On Applied Computing (SAC), 2014.}
-
-% \cvitem{}{Jean-Rémy Falleri, Cédric Teyton, \textbf{Matthieu Foucault}, Marc Palyart, Floréal Morandat and Xavier Blanc\\
-% \emph{The Harmony Platform.}\\
-% Technical Report, (see \url{http://arxiv.org/pdf/1306.6262.pdf}), 2013.}
-
-%\cvitem{}{\textbf{Matthieu Foucault}, Sébastien Barbier, David Lugato.
-%\emph{Enhancing version control with domain-specific semantics.}
-%5th International Workshop on Modeling in Software Engineering (MiSE), 2013.}
-
+% section Education (end)
 \newpage
+\section{Professional Experience}
+\cventry{Oct 2018 - August 2020}{Office Administrator}{St Peter and Paul/St. Matthias Anglican Churches, Victoria, BC}{}{}{Managed parish offices, created and maintained parish documents and bulletns, coordinated guest rentals, overseeing clerical duties and relaying information to church leadership from telephone and email.}
 
-\section{Academic Experience}
-\cvitem{2015}{Teaching: Web development with the MEAN stack, University of Bordeaux}
-\cvitem{2014}{Supervising one graduate student for 5 months, University of Bordeaux}
-\cvitem{2012-2014}{Teaching: REST architecture and Java Servlets, University of Bordeaux}
-\cvitem{August 2013}{Participation in Summer School: Empirical Research Methods in Informatics - Technical University of Denmark, Kongens Lyngby, Denmark - Teacher: Prof Dr. Harald Störrle}
+\cventry{Apr - Jul 2018}{Instructor of Post Sound Production/Sound Recording}{Motion Picture Production Course}{}{}{Independently organised, directed and delivered a twelve week syllabus, creating all course materials and deliverables. Instructed weekly lectures instructing on topics such as Adobe Audition, technical audio editing, production recording for film.}
+
+\cventry{Apr - Jul 2018}{Instructor of Post Sound Production/Sound Recording}{Motion Picture Production Course}{}{}{Independently organised, directed and delivered a twelve week syllabus, creating all course materials and deliverables. Instructed weekly lectures instructing on topics such as Adobe Audition, technical audio editing, production recording for film.}
+
+
+
 
 \section{References}
 \setlength{\hintscolumnwidth}{4cm}
