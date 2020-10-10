@@ -1,58 +1,69 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-
-% moderncv themes
-\moderncvstyle{classic}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
-\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\documentclass[11pt,a4paper, sans]{moderncv}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\moderncvtheme[blue]{casual}
 \usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry}                      
+\usepackage{multicol}
+
+
 
 % personal data
 \firstname{Andrew}
 \familyname{Lloyd}
 \title{Full Stack Web Developer}          % optional, remove / comment the line if not wanted
 \mobile{778 679 8485}                     % optional, remove / comment the line if not wanted
-\email{andrew.lloyd01@googlemail.com}           % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                    % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\email{andrew.lloyd01@googlemail.com}  
+\homepage{www.arlmedia.ca}          % optional, 
+\address{}{}{Victoria, BC}          % optional, 
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Skill Highlights} % (fold)
-\label{sec:research_interests}
+\section{Summary} % (fold)
+\label{sec:summary}
 
+From an early age I was introduced to computers by my brother in law, and ever since I have always had a fascination with software development coupled with a curiosity about building things and problem solving. Working in the film industry and as a lecturer formerly, programming was a hobby that kept on drawing me back in. This year I was laid off from my role as an office administrator, which spurred me on to go back to school and pursue my dream of web development. Not only have do I find coding intellectually stimulating but I have quickly realised that I am now doing what I love. Since starting Lighthouse Labs' 12 week bootcamp I have read through more material than I thought humanly possible to, taken extra Udemy courses on parallel to my studies, and created a portfolio of applications. Working as a full stack developer has been a transformative, rewarding and fulfilling experience, that has helped me realise my life long dream.
+
+
+\section{Skills}
 \begin{itemize}
-	\item Flexible with the ability to prioritize heavy workloads, described as having a first class attitude to any given task with exceptional organizational skills and attention to detail
-	\item Ten years’ experience in various administrative roles including Parish administration, IT sector and hospitality industry 
-	\item Advanced computer and technological skillset with a quick aptitude to use and learn a variety of software programs and web design including various web platforms, Gsuite, Cloud, Microsoft Office, Adobe and MailChimp
-	\item Ability to work and schedule independently and as part of a team
-	\item Excellent verbal and written communication skills with a variety of peoples of different backgrounds
+  \begin{multicols}{3}
+  \item JavaScript
+  \item HTML5
+  \item CSS
+  \item Node/Express
+  \item C$\sharp$ 
+  \item React
+  \item Storybook
+  \item Cypress
+  \item Jest
+  \item Ruby
+  \item AJAX
+  \item NPM
+  \item SQL
+  \item Adobe Creative Suite
+  \item Avid Pro Tools
+  \item Unity3D
+\end{multicols}
 \end{itemize}
+%Section Projects
+
+\section{Projects}
+
+\cventry{Sept. 26 - Oct. 7, 2020}{Interview Scheduler \emph{}}{Lighthouse Labs - Victoria, BC}{}{}{} % arguments 3 to 6 can be left empty
+
+\cventry{March-May 2015}{Visiting student -- Software Practices Lab}{University of British Columbia, Vancouver, Canada}{}{}{Developer activity and software quality in open-source\\
+Advisors: Dr. Marc Palyart and Pr. Gail C. Murphy}
+
+\cventry{2012}{M.Sc. in Computer Science}{University of Bordeaux, Bordeaux, France}{}{}{Software Engineering - Project Management}
 
 
-% section research_interests (end)
+\section{Professional Experience}
+\cventry{April - September 2012}{CEA \emph{(French Atomic Energy and Alternative Energies
+Commission)}}{R\&D Engineer Intern}{}{}{Designed an approach to adapt an existing version control system (Git) to a domain-specific modelling language.}
+\cventry{April - July 2010}{Keyland IT, Burgos, Spain}{Intern Developer}{}{}{Developed a set of modules for a civil engineering project management system.}
 
 \section{Education}
 
