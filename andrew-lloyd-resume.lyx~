@@ -1,0 +1,1740 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass moderncv
+\begin_preamble
+
+
+% moderncv themes
+\moderncvstyle{classic}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' 
+
+% adjust the page margins
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{ifsym}
+
+
+% personal data
+\firstname{Andrew}
+\familyname{Lloyd}
+\title{Full Stack Web Developer} % optional, remove / comment the line if not wanted
+\mobile{778 679 8485} % optional, remove / comment the line if not wanted
+\email{andrew.lloyd01@googlemail.com} 
+\homepage{www.arlmedia.ca} % optional, 
+\address{}{}{\textifsymbol{18} Victoria, BC} % optional, 
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\end_preamble
+\options sans
+\use_default_options false
+\begin_modules
+multicol
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%-----       resume       ------------------------------------------------------
+---
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makecvtitle
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace -2em
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+Summary
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% (fold)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:summary"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+From an early age I was introduced to computers by my brother in law, and
+ ever since I have always had a fascination with software development coupled
+ with a curiosity about building things and problem solving.
+ Working in the film industry and as a lecturer formerly, programming was
+ a hobby that kept on drawing me back in.
+ This year I was laid off from my role as an office administrator, which
+ spurred me on to go back to school and pursue my dream of web development.
+ Not only have do I find coding intellectually stimulating but I have quickly
+ realised that I am now doing what I love.
+ Since starting Lighthouse Labs' 12 week bootcamp I have read through more
+ material than I thought humanly possible to, taken extra Udemy courses
+ on parallel to my studies, and created a portfolio of applications.
+ Working as a full stack developer has been a transformative, rewarding
+ and fulfilling experience, that has helped me realise my life long dream.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section Summary (end)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+Skills
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+JavaScript 
+\end_layout
+
+\begin_layout Itemize
+HTML5 
+\end_layout
+
+\begin_layout Itemize
+CSS 
+\end_layout
+
+\begin_layout Itemize
+Node/Express 
+\end_layout
+
+\begin_layout Itemize
+C# 
+\end_layout
+
+\begin_layout Itemize
+React 
+\end_layout
+
+\begin_layout Itemize
+Storybook 
+\end_layout
+
+\begin_layout Itemize
+Cypress 
+\end_layout
+
+\begin_layout Itemize
+Jest 
+\end_layout
+
+\begin_layout Itemize
+Ruby 
+\end_layout
+
+\begin_layout Itemize
+AJAX 
+\end_layout
+
+\begin_layout Itemize
+NPM 
+\end_layout
+
+\begin_layout Itemize
+Yarn 
+\end_layout
+
+\begin_layout Itemize
+SQL 
+\end_layout
+
+\begin_layout Itemize
+Adobe Creative Suite 
+\end_layout
+
+\begin_layout Itemize
+Avid Pro Tools 
+\end_layout
+
+\begin_layout Itemize
+Unity3D 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section Skills (end)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+Projects
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Sept.
+ 26 - Oct.
+ 7, 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{Interview Shceduler}"
+target "https://github.com/AndrewRLloyd88/scheduler"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+A Single Page React app that allows users to book and cancel interviews.
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Front End:
+\series default
+ React, Webpack, Babel, SASS 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Back End:
+\series default
+ Axios, PostgreSQL, Express, Webpack Dev Server 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Test:
+\series default
+ Jest, Cypress, Storybook 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Sept.
+ 18 - 25, 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{QuizAPP}"
+target "https://github.com/andreiskandar/quiz-app"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Quiz app is a single page app that you can use to create, take and share
+ quizzes.
+ Users can see recent attempts at a quiz after completing them.
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Front End:
+\series default
+ EJS, jQuery, SASS 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Back End:
+\series default
+ NodeJS, Express, jQuery, PostgreSQL, JavaScript 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Test:
+\series default
+ Mocha, Chai 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Sept.
+ 26 - Oct.
+ 7, 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{Tweeter}"
+target "https://github.com/AndrewRLloyd88/tweeter"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+A a simple, single-page Twitter clone.
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Front End:
+\series default
+ HTML, CSS, JavaScript, jQuery, 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Back End:
+\series default
+ NodeJS, Express, jQuery, MongoDB, AJAX, JavaScript 
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+Test:
+\series default
+ Mocha, Chai 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section Projects (end)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+Education
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Nov 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Diploma: Full Stack Web Development
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+Lighthouse Labs - Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Aug 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{The Complete 2020 Web Development Bootcamp}"
+target "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+Udemy - Online course
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+July 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Certificate of Web Development with JavaScript
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+Lighthouse Labs - Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Nov 2014
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+MA in Sound Design with Post Production
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+University of York, York, UK
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Jun 2012
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+BA (Hons) Game Design and Media
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+Sheffield Hallam University, Sheffield, UK
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section Education (end)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+Professional Experience
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Oct 2018 - August 2020
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Office Administrator
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+St Peter and Paul/St.
+ Matthias Anglican Churches, Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Managed parish offices, created and maintained parish documents and bulletns,
+ coordinated guest rentals, overseeing clerical duties and relaying information
+ to church leadership from telephone and email.
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Apr - Jul 2018
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Instructor of Post Sound Production/Sound Recording
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+Motion Picture Production
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Pacific Design Academy, Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Independently organised, directed and delivered a twelve week syllabus,
+ creating all course materials and deliverables.
+ Instructed on topics such as Adobe Audition, technical audio editing, productio
+n recording for film.
+ All students under my direct supervision graduated with a 80% average grade.
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Apr - Sep 2018
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Technical Representative (Casual)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Freeman Audio-Visual Canada, Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Configured AV equipment for a number of events at venues and assisted a
+ wide variety of clients with technical issues.
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Jan - Jun 2018
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Instructor of Post Sound Production/Sound Recording
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+Live Event Audio Visual
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Camosun College, Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Created and taught fourteen week curriculum focusing on a broad range of
+ technical audio visual skills.
+ Coordinated students during group work, office hours meetings and handled
+ booking of industry specialists for guest lecture series
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Nov 2017 - May 2018
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Front Desk Administrator
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Bayview One, Victoria, BC
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Maintained databases and paper and electronic documents for Strata including
+ vehicle registration, pet registration, resident information.
+ Handled communications, bylaw updates and general announcements from the
+ property and strata manager to residents
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+July 2015 - November 2015
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Technical QC Subtitling Administrator (Europe)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Zoo Digital LTD, Sheffield, UK
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Undertook quality control testing for subtitle files for clients such as
+ Netflix, HBO, Disney and the BBC.
+ Checking quality for audio and visual consistency as well as working to
+ client specified style guides.
+ Was part of a team that directly helped the company reach an < 1% rejection
+ rate for subtitle files which secured Netflix as a client.
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+July 2015 - November 2015
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+First Line Support Engineer
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+ASK4 LTD, Sheffield, UK
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Helped customers connect to ASK4 services and assisted with network diagnostics.
+ Provided excellent customer service translating to record amount of sign
+ ups (+30K customers).
+ Utilized in-house CRM to aid network maintenance.
+ Responded professionally and efficiently to E-Mail and live chat queries,
+ handling confidential and sensitive customer information
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+May 2011 - September 2011
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Technical Designer and Game Tester
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+Sumo Digital LTD, Sheffield, UK
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 5
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Worked directly on Nike+ Kinect training for Xbox360 (released Oct 2012).
+ Designed gestures using Kinect technology, worked alongside senior developers
+ to test out the limits of the Kinect hardware and document for Microsoft.
+ Extensively test the game software and report and follow up on all bugs.
+ Take part in morning scrums with the team.
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section Experience (end)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+Voluntary Work
+\end_layout
+
+\begin_layout PDF Page Mode
+
+\series bold
+St.
+ Georges Anglican Church, Victoria, BC:
+\series default
+ Various roles including helping with the Christmas fair, setting up for
+ seniors’ movie nights, youth programming, children’s programming, Sunday@5,
+ helping the church with general audio-visual setups, recording and maintenance
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\series bold
+UVic Interfaith Chapel:
+\series default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{Creation of a promotional video for Anglican Campus Spirituality}"
+target "https://www.youtube.com/watch?v=soZ9rBhGM5k&feature=youtu.be"
+literal "true"
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\series bold
+Techical computer troubleshooting, repair and instruction for seniors in
+ the local community
+\series default
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section Voluntary Work (end)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+References
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+hintscolumnwidth}{4cm}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Alvin Ng
+\end_layout
+
+\end_inset
+
+Front End Developer at Casting Workbook, Vancouver, BC
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{https://www.linkedin.com/in/alvin-ng-developer/}"
+target "https://www.linkedin.com/in/alvin-ng-developer/"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "alvin.cl.ng@gmail.com"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Andy Lindsay
+\end_layout
+
+\end_inset
+
+Full-time Web Instructor at Lighthouse Labs, Vancouver, BC 
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "\\textit{https://www.linkedin.com/in/andydlindsay/}"
+target "https://www.linkedin.com/in/andydlindsay//"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "andydlindsay@yahoo.ca"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Sharon Hallsor
+\end_layout
+
+\end_inset
+
+Youth Director and Peoples Warden - St.
+ Luke Cedar Hill Anglican Church.
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+250-888-7784
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+target "hallsor@shaw.ca"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% section References (end)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\listitemsymbol}{-~}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% change the symbol for lists
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout PDF Page Mode
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
