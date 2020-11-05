@@ -1,16 +1,65 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' 
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+ \usepackage{ifsym}
+
+ \usepackage{expl3}
+\expandafter\def\csname ver@l3regex.sty\endcsname{} 
 % adjust the page margins
-\usepackage[bottom=0.5in, top=0.5in, scale=0.8]{geometry}
+\usepackage[bottom=0.5in, top=0.5in, scale=0.8, right=1in, left=0.5in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[bottom=0.5in, top=0.5in, scale=0.8, right=1in, left=0.5in]{geometry}
 \usepackage{multicol}
-%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-\usepackage[utf8]{inputenc}
-\usepackage{ifsym} 
+
+\makeatletter
+\RenewDocumentCommand{\section}{sm}{%
+  \strut\sectionstyle{#2\hfill}%
+  \par\nobreak\addvspace{1ex}\@afterheading
+  }
+
+\RenewDocumentCommand{\subsection}{sm}{
+  \strut\subsectionstyle{#2}{\color{color1}{\subsectionfill}}%
+  \par\nobreak\addvspace{0.5ex}\@afterheading}
+%
+\makeatother
+
+\renewcommand*{\cvitem}[3][.25em]{%
+  \begin{tabular}{@{}p{\maincolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\hintscolumnwidth}@{}}%
+    {#3} &\raggedleft\hintstyle{#2}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+
+% the following definition is from the file moderncvstyleclassic.sty
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+%   \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}% I changed this line (with comma) ...
+    \ifthenelse{\equal{#4}{}}{}{ {\slshape#4}}% ... into this one (without comma).
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    \strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+%%%
+
+
 
 % personal data
 \firstname{Andrew}
@@ -20,50 +69,43 @@
 \email{andrew.lloyd01@googlemail.com} 
 \homepage{www.arlmedia.ca} % optional, 
 \address{}{}{\textifsymbol{18} Victoria, BC} % optional, 
-%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
 \makecvtitle
 \vspace{-2em}
-
 \section{Summary} % (fold)
 \label{sec:summary}
-
-From an early age I was introduced to computers by my brother in law, and ever since I have always had a fascination with software development coupled with a curiosity about building things and problem solving. Working in the film industry and as a lecturer formerly, programming was a hobby that kept on drawing me back in. This year I was laid off from my role as an office administrator due to COVID-19, which spurred me on to go back to school and pursue my dream of web development. Not only have do I find coding intellectually stimulating but I have quickly realised that I am now doing what I love. Since starting Lighthouse Labs' 12 week bootcamp I have read through more material than I thought humanly possible to, taken extra Udemy courses on parallel to my studies, and created a portfolio of applications. Working as a full stack developer has been a transformative, rewarding and fulfilling experience, that has helped me realise my life long dream.
+A dynamic full-stack developer and passionate learner who is comfortable speaking to clients as well as fellow developers. Eager to use cutting-edge technologies, alongside building long lasting applications and websites.
+\vspace{.25em}
 % section Summary (end)
 
 \section{Skills}
-\begin{itemize}
-\begin{multicols}{3}
-\item JavaScript
-\item HTML5
-\item CSS
-\item Node/Express
-\item C\#
-\item React
-\item Storybook
-\item Cypress
-\item Jest
-\item Ruby
-\item AJAX
-\item NPM
-\item Yarn
-\item SQL
-\item Adobe Creative Suite
-\item Avid Pro Tools
-\item Unity3D
-\end{multicols}
-\end{itemize}
-
+\cventry{}{Frontend}{HTML5, CSS, SASS, JavaScript, React, Storybook}{}{}{}{}{}{}
+\cventry{}{Backend}{Node/Express, Ruby on Rails, MongoDB}{}{}{}{}{}{}
+\cventry{}{Testing}{Cypress, Jest, Mocha, Chai, Capybara, PhantomJS, RSpec}{}{}{}{}{}{}
+\cventry{}{Other}{C\# agile methodologies(SCRUM), Draw.io \LaTeX{} Unity3D}{}{}{}{}{}{}
+\vspace{.25em}
 % section Skills (end)
-
+\vspace{.25em}
 \section{Projects}
 
-\cventry{Sept. 26 - Oct. 7, 2020}{\href{https://github.com/AndrewRLloyd88/scheduler}{\textit{Interview Scheduler}}}{}{}{}{A Single Page React app that allows users to book and cancel interviews.
+\cventry{}{\href{https://github.com/DevHalpin/fork_it_all_frontend}{Forkitall}}{}{}{}{A Single Page React app that allows users to share their twists on various recipes.
+\begin{itemize}
+\item \textbf{Front End:} React, React Router, React Bootstrap, Webpack, Babel, SASS
+\item \textbf{Back End:} Axios, PostgreSQL, Ruby on Rails
+\item \textbf{Deployment:} Heroku: \url{https://fork-it-all.herokuapp.com/}
+\end{itemize}
+}
+
+\cventry{}{\href{https://github.com/AndrewRLloyd88/scheduler}{Jungle}}{}{}{}{A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+\begin{itemize}
+\item \textbf{Front End:} Ruby
+\item \textbf{Back End:} Rails
+\item \textbf{Test:} Capybara, Poltergeist, PhantomJS, RSpec
+\end{itemize}
+}
+
+\cventry{}{\href{https://github.com/AndrewRLloyd88/scheduler}{\textit{Interview Scheduler}}}{}{}{}{A Single Page React app that allows users to book and cancel interviews.
 \begin{itemize}
 \item \textbf{Front End:} React, Webpack, Babel, SASS
 \item \textbf{Back End:} Axios, PostgreSQL, Express, Webpack Dev Server
@@ -71,75 +113,37 @@ From an early age I was introduced to computers by my brother in law, and ever s
 \end{itemize}
 }
 
-\cventry{Sept. 18 - 25, 2020}{\href{https://github.com/andreiskandar/quiz-app}{\textit{QuizAPP}}}{}{}{}{Quiz app is a single page app that you can use to create, take and share quizzes. Users can see recent attempts at a quiz after completing them.
+\cventry{}{\href{https://github.com/AndrewRLloyd88/quiz-app}{\textit{QuizAPP}}}{}{}{}{Quiz app is a single page app that you can use to create, take and share quizzes. Users can see recent attempts at a quiz after completing them.
 \begin{itemize}
 \item \textbf{Front End:} EJS, jQuery, SASS
 \item \textbf{Back End:} NodeJS, Express, jQuery, ElephantSQL, JavaScript
 \item \textbf{Test:} Mocha, Chai
 \end{itemize}
 }
-\cventry{Sept. 26 - Oct. 7, 2020}{\href{https://github.com/AndrewRLloyd88/tweeter}{\textit{Tweeter}}}{}{}{}{A a simple, single-page Twitter clone.
+\cventry{}{\href{https://github.com/AndrewRLloyd88/tweeter}{\textit{Tweeter}}}{}{}{}{A simple, single-page Twitter clone.
 \begin{itemize}
 \item \textbf{Front End:} HTML, CSS, JavaScript, jQuery, 
 \item \textbf{Back End:} NodeJS, Express, jQuery, MongoDB, AJAX, JavaScript
 \item \textbf{Test:} Mocha, Chai
 \end{itemize}
 }
-
-
+\cventry{}{\href{https://github.com/AndrewRLloyd88/tinyapp}{\textit{TinyApp}}}{}{}{}{A TinyURL clone.
+\begin{itemize}
+\item \textbf{Front End:} EJS, , JavaScript, CSS, Bootstrap 
+\item \textbf{Back End:} NodeJS, Express, JavaScript
+\item \textbf{Test:} Mocha, Chai
+\end{itemize}
+}
+\vspace{.25em}
 % section Projects (end)
-
+\vspace{.25em}
 \section{Education}
-
 \cventry{Nov 2020}{{Diploma: Full Stack Web Development}}{Lighthouse Labs - Victoria, BC}{}{}{}
 \cventry{Aug 2020}{\href{https://www.udemy.com/course/the-complete-web-development-bootcamp/}{\textit{The Complete 2020 Web Development Bootcamp}}}{Udemy - Online course}{}{}{}
 \cventry{July 2020}{{Certificate of Web Development with JavaScript}}{Lighthouse Labs - Victoria, BC}{}{}{}
 \cventry{Nov 2014}{MA in Sound Design with Post Production}{University of York, York, UK}{}{}{}
 \cventry{Jun 2012}{BA (Hons) Game Design and Media}{Sheffield Hallam University, Sheffield, UK}{}{}{}
-
 % section Education (end)
-\newpage
-\section{Professional Experience}
-\cventry{Oct 2018 - August 2020}{Office Administrator}{St Peter and Paul/St. Matthias Anglican Churches, Victoria, BC}{}{}{Managed parish offices, created and maintained parish documents and bulletns, coordinated guest rentals, overseeing clerical duties and relaying information to church leadership from telephone and email.}
-
-\cventry{Apr - Jul 2018}{Instructor of Post Sound Production/Sound Recording}{Motion Picture Production}{Pacific Design Academy, Victoria, BC}{}{Independently organised, directed and delivered a twelve week syllabus, creating all course materials and deliverables. Instructed on topics such as Adobe Audition, technical audio editing, production recording for film. All students under my direct supervision graduated with a 80\% average grade.}
-
-\cventry{Apr - Sep 2018}{Technical Representative (Casual)}{}{Freeman Audio-Visual Canada, Victoria, BC}{}{Configured AV equipment for a number of events at venues and assisted a wide variety of clients with technical issues.}
-
-\cventry{Jan - Jun 2018}{Instructor of Post Sound Production/Sound Recording}{Live Event Audio Visual}{Camosun College, Victoria, BC}{}{Created and taught fourteen week curriculum focusing on a broad range of technical audio visual skills. Coordinated students during group work, office hours meetings and handled booking of industry specialists for guest lecture series}
-
-\cventry{Nov 2017 - May 2018}{Front Desk Administrator}{}{Bayview One, Victoria, BC}{}{Maintained databases and paper and electronic documents for Strata including vehicle registration, pet registration, resident information. Handled communications, bylaw updates and general announcements from the property and strata manager to residents}
-
-\cventry{July 2015 - November 2015}{Technical QC Subtitling Administrator (Europe)}{}{Zoo Digital LTD, Sheffield, UK}{}{Undertook quality control testing for subtitle files for clients such as Netflix, HBO, Disney and the BBC. Checking quality for audio and visual consistency as well as working to client specified style guides. Was part of a team that directly helped the company reach an < 1\% rejection rate for subtitle files which secured Netflix as a client.}
-
-\cventry{July 2015 - November 2015}{First Line Support Engineer}{}{ASK4 LTD, Sheffield, UK}{}{Helped customers connect to ASK4 services and assisted with network diagnostics. Provided excellent customer service translating to record amount of sign ups (+30K customers). Utilized in-house CRM to aid network maintenance. Responded professionally and efficiently to E-Mail and live chat queries, handling confidential and sensitive customer information}
-
-\cventry{May 2011 - September 2011}{Technical Designer and Game Tester}{}{Sumo Digital LTD, Sheffield, UK}{}{Worked directly on Nike+ Kinect training for Xbox360 (released Oct 2012). Designed gestures using Kinect technology, worked alongside senior developers to test out the limits of the Kinect hardware and document for Microsoft. Extensively test the game software and report and follow up on all bugs. Take part in morning scrums with the team.}
-% section Experience (end)
-
-\section{Voluntary Work}
-\begin{itemize}
-\item \textbf{St. Georges Anglican Church, Victoria, BC:} Various roles including helping with the Christmas fair, setting up for seniors’ movie nights, youth programming, children’s programming, Sunday@5, helping the church with general audio-visual setups, recording and maintenance 
-\item \textbf{}{}\textbf{UVic Interfaith Chapel:} {\href{https://www.youtube.com/watch?v=soZ9rBhGM5k&feature=youtu.be}{\textit{Creation of a promotional video for Anglican Campus Spirituality}}} 
-\item {}\textbf{Techical computer troubleshooting, repair and instruction for seniors in the local community} 
-\end{itemize}
-% section Voluntary Work (end)
-\section{References}
-\setlength{\hintscolumnwidth}{4cm}
-	\cvitem{\textbf{Alvin Ng}}{Front End Developer at Casting Workbook, Vancouver, BC}
-	\cvitem{}{\href{https://www.linkedin.com/in/alvin-ng-developer/}{\textit{https://www.linkedin.com/in/alvin-ng-developer/}}}
-	\cvitem{}{\href{mailto:alvin.cl.ng@gmail.com}{alvin.cl.ng@gmail.com}}
-	
-    \cvitem{\textbf{Andy Lindsay}}{Full-time Web Instructor at Lighthouse Labs, Vancouver, BC }
-	\cvitem{}{\href{https://www.linkedin.com/in/andydlindsay//}{\textit{https://www.linkedin.com/in/andydlindsay/}}}
-	\cvitem{}{\href{mailto:andydlindsay@yahoo.ca}{andydlindsay@yahoo.ca}}
-	
-	\cvitem{\textbf{Sharon Hallsor}}{Youth Director and Peoples Warden - St. Luke Cedar Hill Anglican Church.}
-	\cvitem{}{250-888-7784}
-	\cvitem{}{\href{mailto:hallsor@shaw.ca}{hallsor@shaw.ca}}
-% section References (end)
-\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
 
 \clearpage
-
 \end{document}
