@@ -255,12 +255,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
-INPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
-INPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
-INPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
-INPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
-INPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
 OUTPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.out
 OUTPUT /home/andrew/Documents/resume-andrew-lloyd/andrew-lloyd-resume.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss10.tfm
