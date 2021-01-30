@@ -37,6 +37,12 @@
 \usepackage[bottom=0.5in, top=0.3in, scale=0.8, right=0.5in, left=0.5in]{geometry}
 \usepackage{multicol}
 
+\usepackage{textcomp,xpatch}
+
+
+%%% Patch \cventry so the second argument is not printed in italics
+\xpatchcmd{\cventry}{\itshape#3}{#3}{}{}
+
 \makeatletter
 \Hy@AtBeginDocument{%
   \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
@@ -52,6 +58,7 @@
 \RenewDocumentCommand{\subsection}{sm}{
   \strut\subsectionstyle{#2}{\color{color1}{\subsectionfill}}%
   \par\nobreak\addvspace{0.5ex}\@afterheading}
+  
 %
 \makeatother
 
@@ -79,13 +86,13 @@
 % personal data
 \firstname{Andrew}
 \familyname{Lloyd}
-\title{Full Stack Web Developer} % optional, remove / comment the line if not wanted
-\mobile{778 679 8485} % optional, remove / comment the line if not wanted
+\title{\textnormal{Full Stack Web Developer}} % optional, remove / comment the line if not wanted
+\mobile{\textnormal{778 679 8485}} % optional, remove / comment the line if not wanted
 \email{andrew.lloyd01@googlemail.com} 
 \homepage{www.arlmedia.ca} % optional,
 \social[github]{andrewrlloyd88}  
 \social[linkedin]{andrewlloyd01}   
-\address{}{}{\textifsymbol{18} Victoria, BC} % optional, 
+\address{}{}{\textifsymbol{18} \textnormal{Victoria, BC}} % optional, 
 
 \begin{document}
 \hypersetup{
@@ -101,10 +108,10 @@
 % section Summary (end)
 
 \section{Technical Toolbelt}
-\cventry{}{Frontend:}{React, Redux, JavaScript, HTML5/CSS, NextJS, MaterialUI  SASS, SCSS, Bootstrap, Responsive Design, Storybook}{}{}{}{}{}{}
-\cventry{}{Backend:}{Node/Express, Ruby on Rails, PostgreSQL, MongoDB}{}{}{}{}{}{}
-\cventry{}{Testing:}{Cypress, Jest, Mocha, Chai, Capybara, CircleCI, PhantomJS, RSpec}{}{}{}{}{}{}
-\cventry{}{Other:}{Github, C\#, RESTful API, ERD, Netlify, Heroku, Vercel, FeaturePeek, Agile Methodologies(SCRUM), Draw.io, Figma, Adobe Creative Suite, \LaTeX{}, Unity3D}{}{}{}{}{}{}
+\cventry{}{Frontend:}{}{React, Redux, JavaScript, HTML5/CSS, NextJS, MaterialUI  SASS, SCSS, Bootstrap, Responsive Design, Storybook}{}{}{}{}{}
+\cventry{}{Backend:}{}{Node/Express, Ruby on Rails, PostgreSQL, MongoDB}{}{}{}{}{}
+\cventry{}{Testing:}{}{Cypress, Jest, Mocha, Chai, Capybara, CircleCI, PhantomJS, RSpec}{}{}{}{}{}
+\cventry{}{Other:}{}{Github, RESTful API, ERD design, Netlify, Heroku, Vercel, FeaturePeek, Draw.io, Figma, Adobe Creative Suite, \LaTeX{}, Unity3D}{Agile Methodologies(SCRUM)}{}{}{}{}
 \vspace{.25em}
 % section Skills (end)
 \vspace{.25em}
@@ -173,11 +180,11 @@
 % section Projects (end)
 \vspace{.25em}
 \section{Education}
-\cventry{Nov 2020}{{Diploma: Full Stack Web Development}}{Lighthouse Labs - Victoria, BC}{}{}{}
-\cventry{Aug 2020}{\href{https://www.udemy.com/course/the-complete-web-development-bootcamp/}{\textit{The Complete 2020 Web Development Bootcamp}}}{Udemy - Online course}{}{}{}
-\cventry{July 2020}{{Certificate of Web Development with JavaScript}}{Lighthouse Labs - Victoria, BC}{}{}{}
-\cventry{Nov 2014}{MA in Sound Design with Post Production}{University of York, York, UK}{}{}{}
-\cventry{Jun 2012}{BA (Hons) Game Design and Media}{Sheffield Hallam University, Sheffield, UK}{}{}{}
+\cventry{Nov 2020}{{Diploma: Full Stack Web Development}}{}{Lighthouse Labs - Victoria, BC}{}{}
+\cventry{Aug 2020}{\href{https://www.udemy.com/course/the-complete-web-development-bootcamp/}{{The Complete 2020 Web Development Bootcamp}}}{}{Udemy - Online course}{}{}
+\cventry{July 2020}{{Certificate of Web Development with JavaScript}}{}{Lighthouse Labs - Victoria, BC}{}{}
+\cventry{Nov 2014}{MA in Sound Design with Post Production}{}{University of York, York, UK}{}{}
+\cventry{Jun 2012}{BA (Hons) Game Design and Media}{}{Sheffield Hallam University, Sheffield, UK}{}{}
 % section Education (end)
 
 \newpage
@@ -200,9 +207,9 @@
 
 \cventry{Oct 2018 - Aug 2020}{Office Administrator}{}{}{}{St Peter and Paul/St. Matthias Anglican Churches, Victoria, BC}
 \begin{itemize}
-\item Managed parish offices, created and maintained parish documents and bulletins 
-\item coordinated guest rentals
-\item Oversaw clerical duties and church communications via website, email and phone.
+\item Updated and managed parish websites and Mailchimp campaigns, created digital posters and ran communications.
+\item Created and maintained parish records, documents and bulletins 
+\item Set up automated rental form for website via Zapier and Microsoft forms, and coordinated rentals.
 \end{itemize}
 
 \cventry{Apr 2017 - Jul 2018}{Instructor of Post Sound Production/Sound Recording}{}{}{}{Pacific Design Academy, Victoria, BC}
